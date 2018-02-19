@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dip"
+    >
+	
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:contentDescription="@string/Logo"
+            android:src="@drawable/ic_launcher" /><requestFocus />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:text="@string/top_text"
+            android:textSize="36sp" />
+
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tblres_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	            <TextView
+	            android:id="@+id/txtres_id"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="60dp"
+	            android:layout_marginLeft="150dp"
+	            android:textSize="25sp"
+	            android:text="Respondent Id" />
+
+	            <EditText
+	                android:id="@+id/edtres_id"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="150dp"
+	                android:layout_marginTop="60dp"
+	                android:ems="10"
+	                android:digits="01234567890"
+					android:inputType="numberDecimal"
+	                android:textSize="25sp" >
+	            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tblres_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	            <TextView
+	            android:id="@+id/txtres_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="150dp"
+	            android:textSize="25sp"
+	            android:text="Respondent Name" />
+
+	            <EditText
+	                android:id="@+id/edtres_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:ems="10" 
+		            android:layout_marginLeft="150dp"
+		            android:textSize="25sp">
+	            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbltabno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	            <TextView
+	            android:id="@+id/txttabno"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="150dp"
+	            android:textSize="25sp"
+	            android:text="TAB number" />
+
+	            <EditText
+	                android:id="@+id/edttabno"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:ems="10" 
+		            android:layout_marginLeft="150dp"
+		            android:textSize="25sp">
+	            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tblmobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	            <TextView
+	            android:id="@+id/txtmobile"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="150dp"
+	            android:textSize="25sp"
+	            android:text="Mobile Number" />
+
+	            <EditText
+	                android:id="@+id/edtmobile"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:ems="10" 
+		            android:layout_marginLeft="150dp"
+		            android:digits="01234567890"
+					android:inputType="numberDecimal"
+		            android:textSize="25sp">
+	            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="NextQuestion"
+            android:text="Start" />
+
+    </RelativeLayout>
+
+</LinearLayout>
